@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Student Welfare Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+Devanagari:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo hover-target">
+        <div class="logo-text">
+          <span class="logo-primary">SWC</span>
+          <span class="logo-secondary">Student Welfare Club</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link hover-target">Home</a>
+        <a href="about.html" class="nav-link hover-target">About</a>
+        <a href="teachings.html" class="nav-link hover-target">Teachings</a>
+        <a href="events.html" class="nav-link hover-target">Events</a>
+        <a href="shlokas.html" class="nav-link hover-target">Shlokas</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </div>
+      <div class="nav-right">
+        <a href="contact.html" class="btn-join hover-target">Join SWC →</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="teachings.html" class="mobile-link">Teachings</a>
+    <a href="events.html" class="mobile-link">Events</a>
+    <a href="shlokas.html" class="mobile-link">Shlokas</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header gsap-reveal" style="padding: 12rem 2rem 4rem; text-align: center;">
+    <div class="section-tag">✦ JOIN THE MOVEMENT ✦</div>
+    <h1 class="section-title">Connect With The Community</h1>
+    <p class="section-sub">Discover a spiritual family. Reach out, tune in, and walk the path together.</p>
+  </header>
+
+   <!-- SOCIAL SECTION -->
+   <section class="social-section gsap-reveal">
+    <div class="container">
+      <div class="social-grid">
+        <a href="#" class="social-card hover-target">
+          <div class="social-icon" style="background:#FF0000">▶</div>
+          <div class="social-info">
+            <div class="social-num">12K</div>
+            <div class="social-label">YouTube</div>
+            <div class="social-desc">Watch Gita discourses & events</div>
+          </div>
+        </a>
+        <a href="#" class="social-card hover-target">
+          <div class="social-icon" style="background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)">📸</div>
+          <div class="social-info">
+            <div class="social-num">8.5K</div>
+            <div class="social-label">Instagram</div>
+            <div class="social-desc">Daily updates</div>
+          </div>
+        </a>
+        <a href="#" class="social-card hover-target">
+          <div class="social-icon" style="background:#25D366">💬</div>
+          <div class="social-info">
+            <div class="social-num">2.5K+</div>
+            <div class="social-label">WhatsApp</div>
+            <div class="social-desc">Real-time discussions</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="join-cta hover-target">
+        <img src="assets/krishna_hero.png" alt="Lord Krishna" class="join-cta-img" />
+        <div class="join-cta-content">
+          <h3>Begin Your Dharmic Journey Today</h3>
+          <p>Join 2,500+ students who found clarity, purpose, and peace through the eternal wisdom.</p>
+          <a href="#" class="btn-primary large hover-target">Sign Up For SWC</a>
+          <p class="join-note" style="margin-top: 1rem;">No prior knowledge required. All are welcome.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="logo-primary">SWC</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Student Welfare Club.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

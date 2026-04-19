@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teachings | Student Welfare Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+Devanagari:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo hover-target">
+        <div class="logo-text">
+          <span class="logo-primary">SWC</span>
+          <span class="logo-secondary">Student Welfare Club</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link hover-target">Home</a>
+        <a href="about.html" class="nav-link hover-target">About</a>
+        <a href="teachings.html" class="nav-link active">Teachings</a>
+        <a href="events.html" class="nav-link hover-target">Events</a>
+        <a href="shlokas.html" class="nav-link hover-target">Shlokas</a>
+        <a href="contact.html" class="nav-link hover-target">Contact</a>
+      </div>
+      <div class="nav-right">
+        <a href="contact.html" class="btn-join hover-target magnetic-target">Join SWC →</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="teachings.html" class="mobile-link">Teachings</a>
+    <a href="events.html" class="mobile-link">Events</a>
+    <a href="shlokas.html" class="mobile-link">Shlokas</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header gsap-reveal" style="padding: 12rem 2rem 4rem; text-align: center;">
+    <div class="section-tag">✦ OUR TEACHINGS ✦</div>
+    <h1 class="section-title">The Four Paths.<br>One Eternal Truth.</h1>
+    <p class="section-sub">Lord Krishna revealed multiple paths to liberation in the Bhagavad Gita.<br>At SWC, we study and practice each to attain highest mastery.</p>
+  </header>
+
+  <!-- TEACHINGS DETAIL SECTION -->
+  <section class="teachings-detail gsap-reveal" style="padding: 4rem 0;">
+    <div class="container">
+      <!-- KARMA YOGA -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 8rem;">
+        <div class="img-parallax-container" style="border-radius: 24px; height: 400px; border: 1px solid var(--card-border);">
+          <img src="assets/kurukshetra.png" class="img-parallax hover-view" />
+        </div>
+        <div>
+          <div class="section-tag">PATH OF ACTION</div>
+          <h2 style="font-size: 3rem; margin-bottom: 1rem; color: var(--gold);">Karma Yoga</h2>
+          <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem;">"You have the right to perform your prescribed duty, but you are not entitled to the fruits of action."</p>
+          <p style="color: var(--text-muted); margin-bottom: 2rem;">Karma Yoga is the secret of work. It teaches us to perform our duties with utmost dedication, efficiency, and zero attachment to the final reward. By surrendering the outcome to the divine, the mind remains unbothered by success or failure.</p>
+          <button class="btn-secondary magnetic-target">Read Chapter 3 Study Guide</button>
+        </div>
+      </div>
+
+      <!-- BHAKTI YOGA -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 8rem;">
+        <div style="order: 2;">
+          <div class="img-parallax-container" style="border-radius: 24px; height: 400px; border: 1px solid var(--card-border);">
+            <img src="assets/krishna_hero.png" class="img-parallax hover-view" />
+          </div>
+        </div>
+        <div style="order: 1;">
+          <div class="section-tag">PATH OF DEVOTION</div>
+          <h2 style="font-size: 3rem; margin-bottom: 1rem; color: var(--gold);">Bhakti Yoga</h2>
+          <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem;">"Engage your mind always in thinking of Me, become My devotee, offer obeisances to Me..."</p>
+          <p style="color: var(--text-muted); margin-bottom: 2rem;">Bhakti Yoga is considered the most supreme and accessible path. Through pure, unconditional love and devotion to God, the ego dissolves. Chanting, singing bhajans, and feeling constant gratitude are integral practices of Bhakti.</p>
+          <button class="btn-secondary magnetic-target">Explore Bhakti Practices</button>
+        </div>
+      </div>
+
+      <!-- DHYANA YOGA -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+        <div class="img-parallax-container" style="border-radius: 24px; height: 400px; border: 1px solid var(--card-border);">
+          <img src="assets/meditation.png" class="img-parallax hover-view" />
+        </div>
+        <div>
+          <div class="section-tag">PATH OF MEDITATION</div>
+          <h2 style="font-size: 3rem; margin-bottom: 1rem; color: var(--gold);">Dhyana (Raja) Yoga</h2>
+          <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem;">"For him who has conquered the mind, the mind is the best of friends..."</p>
+          <p style="color: var(--text-muted); margin-bottom: 2rem;">Total mastery over the restless mind requires rigorous discipline, pranayama, and sustained dhyana (meditation). SWC conducts silent retreats where students disconnect from the world to map the inner universe.</p>
+          <button class="btn-secondary magnetic-target">Join Silent Retreat</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="logo-primary">SWC</span></div>
+      </div>
+      <div class="footer-links-group">
+        <a href="index.html" class="hover-target">Home</a><a href="about.html" class="hover-target">About</a><a href="teachings.html" class="hover-target">Teachings</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Student Welfare Club.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
