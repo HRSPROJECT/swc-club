@@ -1,0 +1,123 @@
+.testimonials-section {
+  padding: 8rem 0;
+  background: var(--bg-dark);
+}
+
+.testimonial-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.testimonial-window {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 3rem 4rem;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.quote-icon {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-text {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--text-main);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.testimonial-author h4 {
+  font-size: 1.2rem;
+  color: var(--saffron);
+  margin-bottom: 0.2rem;
+}
+
+.author-role {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.slider-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-main);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--trans-fast);
+}
+
+.slider-btn:hover {
+  background: rgba(255, 140, 0, 0.2);
+  border-color: var(--saffron);
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.slider-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: var(--trans-fast);
+}
+
+.slider-dot.active {
+  background: var(--saffron);
+  transform: scale(1.3);
+}
+
+@media (max-width: 768px) {
+  .testimonial-slider {
+    position: relative;
+  }
+  
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .slider-btn.prev { left: -10px; }
+  .slider-btn.next { right: -10px; }
+  
+  .testimonial-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .testimonial-text {
+    font-size: 1.1rem;
+  }
+}
